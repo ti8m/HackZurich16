@@ -1,0 +1,5 @@
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:$project.ext.springBootVersion")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:1.3.5.RELEASE")
+    compile project(":api")
+}

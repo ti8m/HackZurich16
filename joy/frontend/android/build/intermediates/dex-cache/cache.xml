@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9178570a3a28c95fabd3bc746cd68efe99ad2b47">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-68731620f1a033248b39569cedb7549d8c660fc5.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.24.1/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="50bae83a0680cb90776a4d36bb6aa4911a84fd8b">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-8dbc867e68dbcbff19cfe8590f36b21ac742bf5f.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-dded5c84786b60fbde04432b4e6cec4a2be8de04.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-de147378c901d4031152913ba6f6802a06f08ea0.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-1ad1187c74cd668b4346460a8bec3c90855ad062.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.m2/repository/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/okio-1.6.0-faedd1d3859b706da0ef67dc3e439db5a4d97653.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/okhttp-2.5.0-3c8ce96140a9f83f2d38b9cb12f8cab0ea9c014f.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.24.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d12931c7b260dda5ba99b8c89cd6ec2a104abed3">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/debug/classes-d1fa92401275b30e145284c4f8bfd974cef8d110.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0d5d69b03cb7d68b81543f6483ed04ccb0e2235b">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-a9a2bf80eea31a425f42e542b328a201b4315e5e.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-327b008d7a4d194aa22ab8be039770151508e741.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.estimote/sdk/0.10.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6c300feb88d963a139744f25a50733148197e4c7">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-77bee52307d9c7b4eb9b22ef18579937db366928.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/internal_impl-23.0.1-7062f24cc1d3056b1c7645a3be53d3c2a5bc224e.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/library-2.4.0-9c46c3892244f2344fc93ff865d8ff17b4c21596.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="845a5b3a624946b2068963ba656c117fc453701c">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-6fee926bab7cbed4631ad99f295ef9be02bf9a5f.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/classes-0fc58dbed3699f4e7b1e97da899aeed368ac6a16.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/jsr305-3.0.0-343644f7a48cecb10b79ee11887cb8a6edc357fe.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/jackson-core-2.2.3-b64f1b25aba84e6d8df4545a36d392a08ea60417.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.5.0/e9753b7dcae5deca92e871c5c759067070b07bc/okhttp-ws-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/okhttp-ws-2.5.0-bc223c1cf6ff4aed98ed076a0021c33640db73eb.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.android-sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/support-annotations-23.0.1-07c5cdee5bac41aec3229b8fb487cd3d4ca09117.jar" />
+    </item>
+    <item
+        jar="/Users/albanveliu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/albanveliu/projects/payapp/student_react_native_client/Peanut/android/app/build/intermediates/pre-dexed/release/bolts-android-1.1.4-1e74105a36a13c7f859a7ac90ee9c43eb41678ae.jar" />
+    </item>
+
+</items>

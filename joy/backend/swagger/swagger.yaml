@@ -1,0 +1,639 @@
+swagger: '2.0'
+info:
+  version: "1.1"
+  title: Joy
+host: localhost:8080
+paths:
+  /peanut/api/customer/logout:
+    post:
+      description: |
+        Logout `Customer` by deleting the token from the database.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Customer object with token (jwt)
+          required: true
+          schema:
+            $ref: "#/definitions/Customer"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Customer is already logged out.
+  /peanut/api/customer/login:
+    get:
+      description: |
+        Login `Customer` with given `email` and `password`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: email
+          description: The user email for login
+          required: false
+          type: string
+        - in: query
+          name: password
+          description: The password for login in clear text
+          required: false
+          type: string
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: "#/definitions/Customer"
+        500:
+          description: Email or password is not correct or user is already logged in
+  /peanut/api/customer/{customerId}:
+    get:
+      description: |
+        Delete a existing `Customer`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: customerId
+          description: The customerId is needed to fetch a `Customer`.
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: "#/definitions/Customer"
+        500:
+          description: Customer does not exist
+  /peanut/api/customer/registerCheck:
+    post:
+      description: |
+        Check if new `Customer` is already registered.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Customer object
+          required: true
+          schema:
+            $ref: "#/definitions/Customer"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Email and/or phonenumber are already used
+  /peanut/api/customer/register:
+    post:
+      description: |
+        Register a new `Customer`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Customer object
+          required: true
+          schema:
+            $ref: "#/definitions/Customer"
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: "#/definitions/Customer"
+        500:
+          description: Email is not valid
+  /peanut/api/customer/update:
+    post:
+      description: |
+        Update a existing `Customer`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Customer object
+          required: true
+          schema:
+            $ref: "#/definitions/Customer"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Customer does not exist or properties are empty
+  /peanut/api/customer/delete:
+    post:
+      description: |
+        Delete a existing `Customer`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Customer object
+          required: true
+          schema:
+            $ref: "#/definitions/Customer"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Customer does not exist
+  /peanut/api/store/getStore:
+    post:
+      description: |
+        Get specific store.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Store object
+          required: true
+          schema:
+            $ref: "#/definitions/Store"
+      responses:
+        200:
+          description: Successful response
+          schema:
+            $ref: "#/definitions/JSONObject"
+        500:
+          description: Store does not exist
+  /peanut/api/store/products/{shopId}:
+    get:
+      description: |
+        Get all products from a shop.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: shopId
+          description: The shopId is needed to fetch all products from a shop.
+          required: true
+          type: integer
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/ShopProduct"
+        500:
+          description: Shop does not exist
+  /peanut/api/store/update:
+    put:
+      description: |
+        Update a existing `Store`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Store object
+          required: true
+          schema:
+            $ref: "#/definitions/Store"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Customer does not exist
+  /peanut/api/store/delete:
+    delete:
+      description: |
+        Delete a existing `Store`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Store object
+          required: true
+          schema:
+            $ref: "#/definitions/Store"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Store not found
+  /peanut/api/store/shop/update:
+    put:
+      description: |
+        Update a existing `Shop`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Shop object
+          required: true
+          schema:
+            $ref: "#/definitions/Shop"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/shop/delete:
+    delete:
+      description: |
+        Delete a existing `Shop`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Shop object
+          required: true
+          schema:
+            $ref: "#/definitions/Shop"
+      responses:
+        200:
+          description: Successful response
+        500:
+          description: Shop not found
+  /peanut/api/store/shop/add:
+    post:
+      description: |
+        Add a new `Shop`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Shop object
+          required: true
+          schema:
+            $ref: "#/definitions/Shop"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/shopProduct/update:
+    put:
+      description: |
+        Update a existing `ShopProduct`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: ShopProduct object
+          required: true
+          schema:
+            $ref: "#/definitions/ShopProduct"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/shopProduct/delete:
+    delete:
+      description: |
+        Delete a existing `ShopProduct`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: ShopProduct object
+          required: true
+          schema:
+            $ref: "#/definitions/ShopProduct"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/shopProduct/add:
+    post:
+      description: |
+        Add a new `ShopProduct`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: ShopProduct object
+          required: true
+          schema:
+            $ref: "#/definitions/ShopProduct"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/prouct/add:
+    post:
+      description: |
+        Add a new `Product`.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Product object
+          required: true
+          schema:
+            $ref: "#/definitions/Product"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/purchase/orderProduct:
+    post:
+      description: |
+        Pay ordered products.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Purchase object
+          required: true
+          schema:
+            $ref: "#/definitions/Purchase"
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: string
+  /peanut/api/store/purchase/updateOrderStatus:
+    put:
+      description: |
+        Change status of an order.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Purchase object
+          required: true
+          schema:
+            $ref: "#/definitions/Purchase"
+      responses:
+        200:
+          description: Successful response
+  /peanut/api/store/purchase/getOrder:
+    get:
+      description: |
+        Get an Order.
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Purchase"
+definitions:
+  Beacon:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      majorId:
+        type: integer
+      minorId:
+        type: integer
+      shop:
+        $ref: "#/definitions/Shop"
+  Store:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      uuid:
+        type: string
+      name:
+        type: string
+      image:
+        type: string
+      shops:
+        type: array
+        items:
+          $ref: "#/definitions/Shop"
+      merchantId:
+        type: string
+      sign:
+        type: string
+  Shop:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+      Store:
+        $ref: "#/definitions/Store"
+      beacon:
+        $ref: "#/definitions/Beacon"
+      shopProduct:
+        type: array
+        items:
+          $ref: "#/definitions/ShopProduct"
+      passengerSeat:
+        type: string
+  ShopProduct:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      shop:
+        $ref: "#/definitions/Shop"
+      Product:
+        $ref: "#/definitions/Product"
+      price:
+        type: number
+      special:
+        type: string
+  Product:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      category:
+        type: string
+      description:
+        type: string
+      ean:
+        type: string
+      image:
+        type: string
+      name:
+        type: string
+      productCode:
+        type: string
+  JSONObject: 
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+      majorId:
+        type: integer
+      minorId:
+        type: integer
+      image:
+        type: string
+      passengerSeat:
+        type: boolean
+  Customer:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      email:
+        type: string
+      password:
+        type: string
+      phoneNumber:
+        type: string
+      jwt:
+        type: string
+  Purchase:
+    type: object
+    properties:
+      STATE_CURRENT:
+        type: integer
+        format: int32
+      STATE_ORDERED:
+        type: integer
+        format: int32
+      STATE_IN_PROGRESS:
+        type: integer
+        format: int32
+      STATE_READY:
+        type: integer
+        format: int32
+      STATE_COMPLETED:
+        type: integer
+        format: int32
+      id:
+        type: integer
+        format: int64
+      customer:
+        $ref: "#/definitions/Customer"
+      shop:
+        $ref: "#/definitions/Shop"
+      status:
+        type: integer
+        format: int32
+      creationDate:
+        type: string
+      paymentDate:
+        type: string
+      paymentDetails:
+        type: string
+      totalPrice:
+        type: string
+      orderId:
+        type: string
+      products:
+        $ref: "#/definitions/PurchaseProduct"
+      paymentCreditCard:
+        $ref: "#/definitions/PaymentCreditCart"
+      shoppingCart:
+        $ref: "#/definitions/ShoppingCart"
+      passengerSeat:
+        type: boolean
+  PurchaseProduct:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      purchase:
+        $ref: "#/definitions/Purchase"
+      product:
+        $ref: "#/definitions/Product"
+      price:
+        type: number
+      count:
+        type: integer
+        format: int32
+  PaymentCreditCart:
+    type: object
+    properties:
+      type:
+        type: string
+      number:
+        type: string
+      expire_month:
+        type: integer
+        format: int32
+      expire_year:
+        type: integer
+        format: int32
+      firstName:
+        type: string
+      lastName:
+        type: string
+      intent:
+        type: string
+      method:
+        type: string
+      currency:
+        type: string
+      total:
+        type: string
+      description:
+        type: string
+  ShoppingCart:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      amount:
+        type: integer
+        format: int32
+      product:
+        $ref: "#/definitions/Product"
+      shop:
+        $ref: "#/definitions/Shop"
+      special:
+        type: string
+      price:
+        type: number

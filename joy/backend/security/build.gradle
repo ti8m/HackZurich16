@@ -1,0 +1,4 @@
+dependencies {
+    compile group: 'org.mindrot', name: 'jbcrypt', version: '0.3m'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.6.0'
+}
