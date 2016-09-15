@@ -7,3 +7,5 @@ The Aduno Group’s payment interface, Microsoft Cognitive Services for face & v
 Build the next vending machine or a robot to finally deliver goods. Furthermore we provide some scissors, cardbox and an IoT-kit.
 
 Feel free to use all of this and bring additional tools to build tomorrow’s payment & delivery solution right today!
+
+Find some usefull informations at the [HackZurich16 Wiki](https://github.com/ti8m/HackZurich16/wiki)
