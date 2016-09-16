@@ -1,0 +1,6 @@
+#!/bin/bash
+# /etc/init.d/fix-touchscreen
+DEVID=`xinput|grep -o -P '免驱触摸易驱板 免驱触摸易驱板\s+id=\d+'|grep -o -P '\d+'`
+xinput set-prop $DEVID "Evdev Axes Swap" 1
+xinput set-prop $DEVID "Evdev Axis Inversion" 1 0
+exit 0
